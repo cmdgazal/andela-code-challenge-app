@@ -4,6 +4,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 
 $(".dropdown").change(async (e) => {
     try{
+        console.log(e.currentTarget.value)
         ga('send', 'event', 'Select', e.currentTarget.value);
         let data;
         document.getElementById("loading").innerHTML = "loading...";

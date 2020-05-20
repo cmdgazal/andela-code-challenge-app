@@ -8,7 +8,7 @@ $(".dropdown").change(async (e) => {
         ga('send', 'event', 'Select', e.currentTarget.value);
         let data;
         document.getElementById("loading").innerHTML = "loading...";
-        await fetch("https://cors-anywhere.herokuapp.com/http://8ea60701.ngrok.io/get_historical_data?asset_id="+ e.currentTarget.value, {
+        await fetch("https://cors-anywhere.herokuapp.com/http://35.193.184.107:5000/get_historical_data?asset_id="+ e.currentTarget.value, {
             headers: {
                 // 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*"

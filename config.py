@@ -1,9 +1,7 @@
 import os
-from dotenv import load_dotenv
-from pathlib import Path  # python3 only
-env_path = Path('.env')
-# env_path = Path('sample.env')
-load_dotenv(dotenv_path=env_path)
+from dotenv import Dotenv
+dotenv = Dotenv(os.path.join(os.path.dirname(__file__), ".env")) # Of course, replace by your correct path
+os.environ.update(dotenv)
 
 config = {
     "db_host": os.getenv('db_host'),

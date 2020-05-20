@@ -1,3 +1,5 @@
+let url = "http://35.193.184.107:5000/get_historical_data?asset_id=";
+
 var ctx = document.getElementById('myChart').getContext('2d');
 
 //
@@ -8,7 +10,7 @@ $(".dropdown").change(async (e) => {
         ga('send', 'event', 'Select', e.currentTarget.value);
         let data;
         document.getElementById("loading").innerHTML = "loading...";
-        await fetch("https://cors-anywhere.herokuapp.com/http://35.193.184.107:5000/get_historical_data?asset_id="+ e.currentTarget.value, {
+        await fetch("https://cors-anywhere.herokuapp.com/"+ url + e.currentTarget.value, {
             headers: {
                 // 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*"

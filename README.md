@@ -2,6 +2,8 @@
 
 A simple web app that displays volume of coins trades for each of BTC, LTC, ETH and XRP
 
+Live url here >>>>> https://coinapichart.imfast.io/
+
 ### Tech
 
 Technologies used:
